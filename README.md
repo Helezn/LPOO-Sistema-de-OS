@@ -33,7 +33,7 @@ O sistema foi modelado com base nos princípios da programação orientada a obj
 
 ### 📄 Diagrama de Classes:
 
-![Diagrama de Classes UML](COLE_O_LINK_DA_IMAGEM_AQUI)
+![ClasseUML](https://github.com/user-attachments/assets/75394c26-9cee-46e8-8835-61f8731227cc)
 
 ---
 
