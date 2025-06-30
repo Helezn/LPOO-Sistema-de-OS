@@ -21,38 +21,37 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "tbl_ordens_servicos")
 public class OrdemServico {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idOS")
     private int idOS;
-    
+
     @Column(name = "descricaoProblema")
     private String descricaoProblema;
-    
+
     @Column(name = "descricaoConserto")
     private String descricaoConserto;
-    
+
     @Enumerated(EnumType.STRING)
     private StatusOS status;
-    
+
     @Enumerated(EnumType.STRING)
     private SetorOS setor;
-    
+
     @Column(name = "codFun")
     private int codFun;
-    
+
     @Column(name = "codTec")
     private int codTec;
-    
+
     @Column(name = "abertura")
     private Date abertura;
-    
+
     @Column(name = "fechamento")
     private Date fechamento;
 
-    public OrdemServico(int idOS, String descricaoProblema, String descricaoConserto, StatusOS status, SetorOS setor, int codFun, int codTec, Date abertura) {
-        this.idOS = idOS;
+    public OrdemServico(String descricaoProblema, StatusOS status, SetorOS setor, int codFun, int codTec, Date abertura) {
         this.descricaoProblema = descricaoProblema;
         this.descricaoConserto = descricaoConserto;
         this.status = status;
@@ -132,5 +131,10 @@ public class OrdemServico {
 
     public void setFechamento(Date fechamento) {
         this.fechamento = fechamento;
+    }
+
+    @Override
+    public String toString() {
+        return "OS: " + idOS + " | Status: " + status + " | Setor: " +  setor;
     }
 }

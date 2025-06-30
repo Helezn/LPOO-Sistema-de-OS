@@ -25,21 +25,20 @@ public abstract class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    
+
     @Column(name = "nome")
     private String nome;
-    
+
     @Column(name = "login")
     private String login;
-    
+
     @Column(name = "senha")
     private String senha;
-    
+
     @Column(name = "tipo")
     private String tipo;
 
-    public Usuario(int id, String nome, String login, String senha, String tipo) {
-        this.id = id;
+    public Usuario(String nome, String login, String senha, String tipo) {
         this.nome = nome;
         this.login = login;
         this.senha = senha;
@@ -86,4 +85,8 @@ public abstract class Usuario {
         this.tipo = tipo;
     }
 
+    @Override
+    public String toString() {
+        return "Usuário: " + nome + " | Login: " + login + " | Tipo: " + tipo;
+    }
 }

@@ -8,11 +8,16 @@ package control;
  *
  * @author acer
  */
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.persistence.*;
-//import model.Carta;
+import model.Funcionario;
+import model.Tecnico;
+import model.OrdemServico;
+import model.Usuario;
+
 public class PersistenciaJPA implements InterfaceBD {
 
     private EntityManager entity;
@@ -45,9 +50,6 @@ public class PersistenciaJPA implements InterfaceBD {
         entity = getEntityManager();
         try {
             entity.getTransaction().begin();
-            if (!entity.contains(o)) {
-                o = entity.merge(o);
-            }
             entity.persist(o);
             entity.getTransaction().commit();
         } catch (Exception e) {
@@ -85,15 +87,53 @@ public class PersistenciaJPA implements InterfaceBD {
         return entity;
     }
 
-//    // 🔄 Método para listar todas as Cartas
-//    public List<Carta> getCartas() {
-//        entity = getEntityManager();
-//        try {
-//            TypedQuery<Carta> query = entity.createQuery("SELECT c FROM Carta c", Carta.class);
-//            return query.getResultList();
-//        } catch (Exception e) {
-//            Logger.getLogger(PersistenciaJPA.class.getName()).log(Level.SEVERE, "Erro ao buscar cartas", e);
-//            return null;
-//        }
-//    }
+    public List<Usuario> getUsuarios() {
+        List<Usuario> lista = new ArrayList<>();
+
+        List<Funcionario> funcionarios = getFuncionarios();
+        if (funcionarios != null) {
+            lista.addAll(funcionarios);
+        }
+
+        List<Tecnico> tecnicos = getTecnicos();
+        if (tecnicos != null) {
+            lista.addAll(tecnicos);
+        }
+
+        return lista;
+    }
+
+    public List<Tecnico> getTecnicos() {
+        entity = getEntityManager();
+        try {
+            TypedQuery<Tecnico> query = entity.createQuery("SELECT t FROM Tecnico t", Tecnico.class);
+            return query.getResultList();
+        } catch (Exception e) {
+            Logger.getLogger(PersistenciaJPA.class.getName()).log(Level.SEVERE, "Erro ao buscar técnicos", e);
+            return null;
+        }
+    }
+
+    public List<Funcionario> getFuncionarios() {
+        entity = getEntityManager();
+        try {
+            TypedQuery<Funcionario> query = entity.createQuery("SELECT f FROM Funcionario f", Funcionario.class);
+            return query.getResultList();
+        } catch (Exception e) {
+            Logger.getLogger(PersistenciaJPA.class.getName()).log(Level.SEVERE, "Erro ao buscar funcionários", e);
+            return null;
+        }
+    }
+
+    public List<OrdemServico> getOrdensServico() {
+        entity = getEntityManager();
+        try {
+            TypedQuery<OrdemServico> query = entity.createQuery("SELECT o FROM tbl_ordens_servicos o", OrdemServico.class);
+            return query.getResultList();
+        } catch (Exception e) {
+            Logger.getLogger(getClass().getName()).log(Level.SEVERE, "Erro ao buscar ordens de serviço", e);
+            return null;
+        }
+    }
+
 }

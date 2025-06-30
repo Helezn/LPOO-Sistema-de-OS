@@ -17,12 +17,12 @@ import javax.persistence.Table;
 @Table(name = "tbl_tecnicos")
 @DiscriminatorValue("tipo_tecnico")
 public class Tecnico extends Usuario {
-    
+
     @Column(name = "codTec")
     private int codTec;
 
-    public Tecnico(int codTec, int id, String nome, String login, String senha, String tipo) {
-        super(id, nome, login, senha, tipo);
+    public Tecnico(int codTec, String nome, String login, String senha, String tipo) {
+        super(nome, login, senha, tipo);
         this.codTec = codTec;
     }
 
@@ -33,4 +33,9 @@ public class Tecnico extends Usuario {
     public void setCodTec(int codTec) {
         this.codTec = codTec;
     }
+
+//    @Override
+//    public String toString() {
+//        return "Usuário: " + nome + " | Login: " + login + " | Tipo: " + tipo + " | Código: " + codTec;
+//    }
 }

@@ -21,8 +21,8 @@ public class Funcionario extends Usuario {
     @Column(name = "codFun")
     private int codFun;
 
-    public Funcionario(int codFun, int id, String nome, String login, String senha, String tipo) {
-        super(id, nome, login, senha, tipo);
+    public Funcionario(int codFun, String nome, String login, String senha, String tipo) {
+        super(nome, login, senha, tipo);
         this.codFun = codFun;
     }
 

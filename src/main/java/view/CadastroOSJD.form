@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JLabel" name="lblNome1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o do problema:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtNome1">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNome1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblAtaque1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="C&#xf3;digo usu&#xe1;rio:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDefesa1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="C&#xf3;digo T&#xe9;cnico:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtAtaque1">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDefesa1">
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="jTable1">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="4" rowCount="4">
+                <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                <Column editable="true" title="Title 4" type="java.lang.Object"/>
+              </Table>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="lblTitulo" min="-2" pref="174" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="141" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lblDescProb" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtDescProb" min="-2" pref="289" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="lblDatAbe" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
+                          <Component id="lblDatFec" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="txtDatFec" min="-2" pref="97" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="lblSetor" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblStatus" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCodFun" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDescCons" min="-2" pref="121" max="-2" attributes="0"/>
+                          <Component id="lblCodTec" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtDatAbe" min="-2" pref="97" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="txtDescCons" max="32767" attributes="0"/>
+                              <Component id="cmbSetor" max="32767" attributes="0"/>
+                              <Component id="cmbStatus" alignment="1" max="32767" attributes="0"/>
+                              <Component id="txtCodFun" alignment="0" max="32767" attributes="0"/>
+                              <Component id="txtCodTec" min="-2" pref="289" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                      <Component id="btnSalvar" min="-2" pref="156" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="btnCancelar" min="-2" pref="156" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="27" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Component id="lblTitulo" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="txtDescProb" min="-2" pref="58" max="-2" attributes="0"/>
+                  <Component id="lblDescProb" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lblDescCons" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDescCons" min="-2" pref="58" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cmbStatus" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblStatus" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblSetor" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmbSetor" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtCodFun" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblCodFun" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblCodTec" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCodTec" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="txtDatAbe" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblDatAbe" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDatFec" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblDatFec" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnSalvar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnCancelar" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="25" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblTitulo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cadastro de Ordem de Servi&#xe7;o:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDescProb">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o do problema:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblSetor">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Setor da OS:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblCodFun">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="C&#xf3;digo funcion&#xe1;rio:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblCodTec">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="C&#xf3;digo T&#xe9;cnico:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDescProb">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDescProbActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbSetor">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;SetorOS&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCodFun">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCodFunActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCodTec">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnSalvar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Salvar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalvarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnCancelar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cancelar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCancelarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDescCons">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Descri&#xe7;&#xe3;o do conserto:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDescCons">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDescConsActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblStatus">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Status:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbStatus">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;StatusOS&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDatAbe">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Abertura:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDatFec">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fechamento:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDatAbe">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDatAbeActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtDatFec">
+    </Component>
+  </SubComponents>
+</Form>
